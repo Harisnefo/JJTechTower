@@ -3,9 +3,6 @@
   connection: local
   gather_facts: False
 
-  vars:
-    instance_count: "{{ instance_count }}"
-
   tasks:
     - name: Create EC2
       ec2_instance:
